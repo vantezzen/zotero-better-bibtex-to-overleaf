@@ -1,6 +1,6 @@
 {
   "name": "zotero-better-bibtex-to-overleaf",
-  "displayName": "Zotero better bibtex to overleaf",
+  "displayName": "Zotero Better-BibTex to Overleaf Local Sync",
   "version": "0.0.1",
   "description": "Sync Zotero Better Bibtex export to Overleaf locally",
   "author": "vantezzen",
@@ -10,9 +10,21 @@
     "test": "plasmo test"
   },
   "dependencies": {
+    "@plasmohq/messaging": "^0.6.1",
+    "@radix-ui/react-alert-dialog": "^1.0.5",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-separator": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "lucide": "^0.307.0",
+    "lucide-react": "^0.307.0",
     "plasmo": "0.84.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "4.1.1",
@@ -20,12 +32,20 @@
     "@types/node": "20.9.0",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
     "prettier": "3.0.3",
+    "tailwindcss": "^3.4.1",
     "typescript": "5.2.2"
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      "https://www.overleaf.com/project/*",
+      "http://127.0.0.1:23119/better-bibtex/export/collection/*",
+      "http://127.0.0.1:24119/better-bibtex/export/collection"
+    ],
+    "permissions": [
+      "scripting"
     ]
   }
 }
