@@ -8,7 +8,7 @@ import type {
 import NewBibtexFileModalContent from "~components/NewBibtexFileModalContent"
 
 export const config: PlasmoCSConfig = {
-  matches: ["https://www.overleaf.com/project/*"],
+  matches: ["https://*.overleaf.com/project/*"],
   world: "MAIN"
 }
 

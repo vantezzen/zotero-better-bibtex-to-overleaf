@@ -1,12 +1,13 @@
 {
   "name": "zotero-better-bibtex-to-overleaf",
   "displayName": "Zotero Better-BibTex to Overleaf Local Sync",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Sync Zotero Better Bibtex export to Overleaf locally",
   "author": "vantezzen",
   "scripts": {
     "dev": "plasmo dev",
-    "build": "plasmo build",
+    "build": "plasmo build --zip",
+    "build-ff": "plasmo build --target=firefox-mv2 --zip",
     "test": "plasmo test"
   },
   "dependencies": {
@@ -40,9 +41,11 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://www.overleaf.com/project/*",
+      "https://*.overleaf.com/project/*",
+      "http://127.0.0.1/better-bibtex/export/collection/*",
+      "http://localhost/better-bibtex/export/collection/*",
       "http://127.0.0.1:23119/better-bibtex/export/collection/*",
-      "http://127.0.0.1:24119/better-bibtex/export/collection"
+      "http://127.0.0.1:24119/better-bibtex/export/collection/*"
     ],
     "permissions": [
       "scripting"

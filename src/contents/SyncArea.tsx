@@ -5,7 +5,7 @@ import NewFileSidebarButton from "~components/NewFileSidebarButton"
 import SyncAreaContent from "~components/SyncAreaContent"
 
 export const config: PlasmoCSConfig = {
-  matches: ["https://www.overleaf.com/project/*"]
+  matches: ["https://*.overleaf.com/project/*"]
 }
 
 export const getStyle = () => {
