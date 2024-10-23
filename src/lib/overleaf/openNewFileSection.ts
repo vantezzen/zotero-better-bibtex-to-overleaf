@@ -1,13 +1,13 @@
 export default function openNewFileSection(onClose: () => void) {
-  const body = document.querySelector(".modal-new-file--body")
+  const body = document.querySelector(".modal-new-file.modal-body")
   body.classList.add("hidden")
 
   const newBody = document.createElement("td")
-  newBody.classList.add("modal-new-file--body")
+  newBody.classList.add("modal-new-file", "modal-body")
   newBody.innerHTML = `<div class="better-bibtex-new-file"></div>`
   body.parentElement.appendChild(newBody)
 
-  const listButtons = document.querySelectorAll(".modal-new-file--list button")
+  const listButtons = document.querySelectorAll(".modal-new-file-list button")
   const revert = () => {
     // If we modify the body directly, Overleaf will crash
     // when trying to go back to another page
@@ -26,6 +26,6 @@ export default function openNewFileSection(onClose: () => void) {
   })
 
   document
-    .querySelector(".modal-new-file--list .active")
+    .querySelector(".modal-new-file-list .active")
     .classList.remove("active")
 }

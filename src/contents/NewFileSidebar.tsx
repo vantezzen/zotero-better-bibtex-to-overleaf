@@ -25,7 +25,7 @@ const NewFileSidebar = () => {
 }
 
 export const getInlineAnchor: PlasmoGetInlineAnchor = async () => {
-  return document.querySelector(".modal-new-file--list .list-unstyled")
+  return document.querySelector(".modal-new-file-list .list-unstyled")
 }
 
 export default NewFileSidebar
