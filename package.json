@@ -1,7 +1,7 @@
 {
   "name": "zotero-better-bibtex-to-overleaf",
   "displayName": "Zotero Better-BibTex to Overleaf Local Sync",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Sync Zotero Better Bibtex export to Overleaf locally",
   "author": "vantezzen",
   "scripts": {
