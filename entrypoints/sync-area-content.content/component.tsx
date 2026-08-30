@@ -92,7 +92,7 @@ function SyncAreaContent() {
         "w-full font-sans text-foreground antialiased",
       )}
     >
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-border bg-background px-4 py-2.5">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-3 border-t border-border bg-orange-50  px-4 py-2.5">
         <span
           aria-hidden
           className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-muted text-muted-foreground"

@@ -2,7 +2,7 @@
   "name": "zotero-better-bibtex-to-overleaf",
   "description": "Sync Zotero Better Bibtex export to Overleaf locally",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "wxt",

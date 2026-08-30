@@ -88,7 +88,6 @@ function NewBibtexFileModalContent() {
   }, []);
 
   const trimmed = url.trim();
-  const isUrl = /^https?:\/\/\S+$/i.test(trimmed);
   const looksLikeExport = /better-bibtex\/export/i.test(trimmed);
 
   return (
@@ -144,7 +143,7 @@ function NewBibtexFileModalContent() {
         className="mt-5 border-t border-border pt-4"
         onSubmit={async (event) => {
           event.preventDefault();
-          if (!isUrl || isCreating) return;
+          if (!url || isCreating) return;
 
           setIsCreating(true);
           realSubmitButton?.setAttribute("disabled", "true");
@@ -198,7 +197,7 @@ function NewBibtexFileModalContent() {
             type="submit"
             size="sm"
             className={BUTTON}
-            disabled={!isUrl || isCreating}
+            disabled={!url || isCreating}
           >
             {isCreating && (
               <Loader2 size={14} strokeWidth={2.5} className="animate-spin" />
